@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Getting a GitHub API key
+1. On Github, navigate to Settings -> Developer Settings -> Personal access tokens -> Tokens (classic)
+2. Click Generate new token -> Generate new token (classic)
+3. Select the required scopes, then click "Generate Token"
+4. Copy the newly generated personal access token to a secure location
