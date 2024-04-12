@@ -9,6 +9,7 @@ const navigation = [
   //We use includes for the blog route because there might be multiple "blog" routes.
   { name: 'Blog', href: '/blog', current: route.name.includes('blog') },
   { name: 'Projects', href: '/projects', current: route.name == 'projects' },
+  { name: 'Contact Me', href: '/contact', current: route.name == 'contact' },
 ]
 </script>
 
