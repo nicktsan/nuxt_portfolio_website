@@ -1,5 +1,9 @@
 <script setup>
-import { ref } from 'vue';
+// import { ref } from 'vue';
+const modalActive = ref(null);
+const toggleModal = () => {
+  modalActive.value = !modalActive.value;
+}
 const runtimeConfig  = useRuntimeConfig();
 const form = ref({
   access_key: runtimeConfig.public.WEBTHREEFORM_PUBLIC_ACCESS_KEY,
@@ -33,6 +37,7 @@ const submitForm = async () => {
       console.log(response); // Log for debugging, can be removed
       status.value = "error";
     }
+    toggleModal()
   } catch (error) {
     console.log(error); // Log for debugging, can be removed
     status.value = "error";
@@ -58,7 +63,7 @@ const submitForm = async () => {
     <textarea name="message" v-model="form.message"></textarea>
     <button type="submit">Send Message</button>
   </form> -->
-  <div class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900">
+  <div class="flex items-center min-h-screen bg-white dark:bg-gray-900">
     <div class="container mx-auto">
       <div class="max-w-xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
         <div class="text-center">
@@ -118,20 +123,23 @@ const submitForm = async () => {
                 </div>
               </div> -->
             </div>
-            <!-- todo textarea validation -->
             <div class="mb-6">
               <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
               <!-- <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea> -->
               <textarea rows="5" name="message"  v-model="form.message" id="message" placeholder="Your Message" 
-              pattern=".*[^\s]+.*"
-              class="invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
-              <div class="empty-feedback hidden invalid-feedback text-red-400 text-sm mt-1">
+              class="invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer w-full px-3 py-2 placeholder-gray-300 border-2 border-gray-200 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" 
+              required></textarea>
+              <div class="hidden text-red-400 text-sm mt-1 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block">
                 Please enter your message.
               </div>
             </div>
             <div class="mb-6">
-              <button type="submit" 
+              <!-- <button type="submit" 
               class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none group-invalid:pointer-events-none group-invalid:opacity-30 ">
+                Send Message
+              </button> -->
+              <button type="submit" 
+                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md group-invalid:pointer-events-none group-invalid:opacity-30 ">
                 Send Message
               </button>
             </div>
@@ -141,4 +149,12 @@ const submitForm = async () => {
       </div>
     </div>
   </div>
+  <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
+    <div class="text-black">
+      <h1 class="text-2xl mb-1">Email Status</h1>
+      <p class="mb-4">
+        Post response
+      </p>
+    </div>
+  </BaseModal>
 </template>
