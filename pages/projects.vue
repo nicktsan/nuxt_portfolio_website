@@ -1,5 +1,5 @@
 <script setup>
-const repoNames = ["movies_frontend_nextjs", "cookie_run_tcg_discord_bot"]
+const repoNames = ["movies_frontend_nextjs", "cookie_run_tcg_discord_bot", "nuxt_portfolio_website"]
 //Create a query string that will issue multiple queries that search for github repositories with names in repoNames.
 var queryStr = `
 query{ 

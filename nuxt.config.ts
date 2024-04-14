@@ -8,7 +8,10 @@ export default defineNuxtConfig({
     '@nuxtjs/apollo'
   ],
   runtimeConfig: {
-    githubToken: process.env.GITHUB_TOKEN
+    githubToken: process.env.GITHUB_TOKEN,
+    public: {
+      WEBTHREEFORM_PUBLIC_ACCESS_KEY: process.env.WEBTHREEFORM_PUBLIC_ACCESS_KEY
+    },
   },
   content: {
     highlight: {
