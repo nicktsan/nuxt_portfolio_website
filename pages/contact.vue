@@ -1,8 +1,12 @@
 <script setup>
 // import { ref } from 'vue';
 const modalActive = ref(null);
+const respMessage = ref("");
 const toggleModal = () => {
   modalActive.value = !modalActive.value;
+}
+const setModalMessage = (message) => {
+  respMessage.value = message;
 }
 const runtimeConfig  = useRuntimeConfig();
 const form = ref({
@@ -14,12 +18,12 @@ const form = ref({
 
 });
 
-const result = ref("");
-const status = ref("");
+// const result = ref("");
+// const status = ref("");
 
 const submitForm = async () => {
-  result.value = "Please wait...";
-  console.log(form)
+  // result.value = "Please wait...";
+  // console.log(form)
   try {
     const response = await $fetch('https://api.web3forms.com/submit', {
       method: 'POST',
@@ -28,21 +32,25 @@ const submitForm = async () => {
     });
 
     console.log(response); // You can remove this line if you don't need it
-    
-    result.value = response.message;
+    // result.value = response.message;
 
-    if (response.status === 200) {
-      status.value = "success";
-    } else {
-      console.log(response); // Log for debugging, can be removed
-      status.value = "error";
-    }
-    toggleModal()
+    // if (response.status === 200) {
+    //   // status.value = "success";
+    //   setModalMessage("Message successfully sent.")
+    // } else {
+    //   console.log(response); // Log for debugging, can be removed
+    //   // status.value = "error";
+    //   setModalMessage("Error occured while sending message.")
+    // }
+    setModalMessage("Message successfully sent.")
   } catch (error) {
+    console.log("error caught:")
     console.log(error); // Log for debugging, can be removed
-    status.value = "error";
-    result.value = "Something went wrong!";
+    // status.value = "error";
+    // result.value = "Something went wrong!";
+    setModalMessage("Error occured while sending message.")
   } finally {
+    toggleModal()
     // Reset form after submission
     form.value.name = "";
     form.value.email = "";
@@ -50,8 +58,9 @@ const submitForm = async () => {
 
     // Clear result and status after 5 seconds
     setTimeout(() => {
-      result.value = "";
-      status.value = "";
+      // result.value = "";
+      // status.value = "";
+      // respMessage.value = "";
     }, 5000);
   }
 };
@@ -149,11 +158,11 @@ const submitForm = async () => {
       </div>
     </div>
   </div>
-  <BaseModal :modalActive="modalActive" @close-modal="toggleModal">
+  <BaseModal :modalActive="modalActive" :respMessage="respMessage" @close-modal="toggleModal">
     <div class="text-black">
-      <h1 class="text-2xl mb-1">Email Status</h1>
+      <!-- <h1 class="text-2xl mb-1">Email Status</h1> -->
       <p class="mb-4">
-        Post response
+        {{ respMessage }}
       </p>
     </div>
   </BaseModal>

@@ -28,6 +28,10 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  respMessage: {
+    type: String,
+    default: "",
+  }
 });
 </script>
 
