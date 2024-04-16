@@ -9,7 +9,7 @@ const { data: posts } = await useAsyncData('latest-posts', () =>
 
 <template>
     <section>
-        <h1 class="text-5xl font-bold mt-20">👋🏻 Hello, I'm Nicholas Tsang!</h1>
+        <h1 class="text-5xl font-bold mt-20">Hello, I'm Nicholas Tsang!</h1>
         <p class="text-base text-gray-900 p-2 italic">Software Developer</p>
     </section>
     <section class="flex flex-col md:flex-row">

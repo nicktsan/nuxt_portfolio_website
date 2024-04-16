@@ -80,7 +80,7 @@ const submitForm = async () => {
             Contact Me
           </h1>
           <p class="text-gray-400 dark:text-gray-400">
-            Fill up the form below to send us a message.
+            Fill up the form below to send me a message.
           </p>
         </div>
         <div class="m-7">
@@ -148,7 +148,7 @@ const submitForm = async () => {
                 Send Message
               </button> -->
               <button type="submit" 
-                class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md group-invalid:pointer-events-none group-invalid:opacity-30 ">
+                class="w-full px-3 py-4 text-white bg-sky-800 hover:bg-sky-700 rounded-md group-invalid:pointer-events-none group-invalid:opacity-30 ">
                 Send Message
               </button>
             </div>

@@ -42,13 +42,13 @@ const { data, error } = await useAsyncQuery(query);
     <div v-for="(query, queryKey) in data" :key="queryKey"
       class="flex flex-col h-full p-8 border-4 my-4 rounded-lg hover:bg-gray-50">
         <a :href="query.repository.url" target="_blank">
-          <h2 class="text-2xl text-indigo-800 font-semibold mb-2 hover:underline">{{ query.repository.name }}</h2>
+          <h2 class="text-2xl text-purple-800 font-semibold mb-2 hover:underline">{{ query.repository.name }}</h2>
         </a>
         <p>{{ query.repository.description }}</p>
       <div class="mt-auto">
-        <Icon name="fontisto:star" size="1.1rem" class="text-indigo-700" /> Stars: {{ query.repository.stargazers.totalCount }}
-        <Icon name="system-uicons:branch" size="1.1rem" class="text-indigo-800" /> Forks: {{ query.repository.forks.totalCount }}
-        <Icon name="system-uicons:eye" size="1.1rem" class="text-indigo-700" /> Watchers: {{
+        <Icon name="fontisto:star" size="1.1rem" class="text-purple-700" /> Stars: {{ query.repository.stargazers.totalCount }}
+        <Icon name="system-uicons:branch" size="1.1rem" class="text-purple-800" /> Forks: {{ query.repository.forks.totalCount }}
+        <Icon name="system-uicons:eye" size="1.1rem" class="text-purple-700" /> Watchers: {{
           query.repository.watchers.totalCount }}
       </div>
     </div>
