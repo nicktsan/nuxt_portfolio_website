@@ -158,8 +158,11 @@ const submitForm = async () => {
       </div>
     </div>
   </div>
+  <section>
+    <p class="text-center text-gray-700">Or email me directly @ nicktsang.manhay@gmail.com</p>
+  </section>
   <BaseModal :modalActive="modalActive" :respMessage="respMessage" @close-modal="toggleModal">
-    <div class="text-black">
+    <div class="text-gray-700">
       <!-- <h1 class="text-2xl mb-1">Email Status</h1> -->
       <p class="mb-4">
         {{ respMessage }}
