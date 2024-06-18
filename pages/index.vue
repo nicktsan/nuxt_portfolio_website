@@ -43,7 +43,7 @@ const technologies = [
       <div class="md:w-3/4">
           <h2 class="text-3xl font-bold mt-8">My Story</h2>
           <p class="text-lg py-2">
-              I was a former Software Engineer in Quality Assurance who is aspiring to become a Full Stack Developer. My transition to software 
+              I was a former Software Developer in Quality Assurance who is aspiring to become a Full Stack Developer. My transition to software 
               development stems from a deep-seated passion 
               for crafting innovative solutions that enrich user experiences. I possess the ability to adapt swiftly to any role 
               or project. I am eager to leverage my skills and drive in software development to embark on a new and fulfilling 
