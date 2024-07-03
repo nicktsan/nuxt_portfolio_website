@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -14,6 +15,9 @@ export default defineNuxtConfig({
     },
   },
   content: {
+    markdown: {
+      anchorLinks: false
+    },
     highlight: {
       theme: 'nord',
       preload: ['ts', 'js', 'css', 'json', 'bash', 'vue']

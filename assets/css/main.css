@@ -1,0 +1,9 @@
+/* assets/css/main.css */
+.prose a {
+    color: rgb(55, 144, 200);
+    text-decoration: underline;
+  }
+  
+  .prose a:hover {
+    color: darkblue;
+  }
