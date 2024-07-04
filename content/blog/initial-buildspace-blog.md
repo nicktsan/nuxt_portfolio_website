@@ -7,11 +7,11 @@ cover: cookieruntcg.PNG
 #   - blog
 ---
 
-Hi. I like trading card games. I also like building decks for trading card games. When I first heard of [Cookie Run: Braverse](https://cookie-run-braverse.fandom.com/wiki/Cookie_Run:_Braverse_Wiki), it was described to me as a game that was easy to pick up, but difficult to master, as there are a myriad of decisions players make at nearly every point in the game. My first game on [Tabletop Simulator](https://store.steampowered.com/app/286160/Tabletop_Simulator/) with the [Cookie Run: TCG](https://steamcommunity.com/sharedfiles/filedetails/?id=3167369640) mod hooked me in, and I've enjoyed playing ever since.
+Hello, fellow gaming enthusiasts! As a passionate player and deck builder for trading card games, I've always relished the strategic depth and creativity they offer. When I discovered [Cookie Run: Braverse](https://cookie-run-braverse.fandom.com/wiki/Cookie_Run:_Braverse_Wiki), a game celebrated for its easy-to-learn yet hard-to-master gameplay, I was instantly captivated. My inaugural match on [Tabletop Simulator](https://store.steampowered.com/app/286160/Tabletop_Simulator/) using the [Cookie Run: TCG](https://steamcommunity.com/sharedfiles/filedetails/?id=3167369640) solidified my fascination. However, I noticed a significant gap – there wasn't a deck-building site available for English-speaking users. To address this, I've decided to create a dedicated deck-building website for Cookie Run: Braverse, making it easier for the community to craft their decks and elevate their gameplay experience.
 
 ## Breaking the Mold: A Universal Deck Builder for Cookie Run Fans
 
-The game lacks an official English release. This creates a significant barrier for Western players who rely on fan translations to navigate the game and build their decks. Moreover, there are no English deck-building websites (like [Moxfield](https://www.moxfield.com/) or [Archidekt](https://archidekt.com/)) for Cookie Run: Braverse, leaving players without convenient tools to share or copy deck lists. This is the problem I aim to solve with my project—a comprehensive deck-building website that supports both English and Korean, offering much-needed tools like card searching, deck exporting, and browsing other players' decks.
+Since the game has only been released in Korea, the absence of an official English version poses a significant barrier for Western players. They must rely on fan translations to navigate the game and build their decks, which hampers their ability to fully engage with the game. Additionally, the lack of English-language deck-building websites for Cookie Run: Braverse (similar to [Moxfield](https://www.moxfield.com/) or [Archidekt](https://archidekt.com/) for [Magic: the Gathering](https://magic.wizards.com/en)) means that players lack convenient tools to share or copy deck lists. This gap underscores the urgent need for a solution. My project aims to address this issue by creating a comprehensive deck-building website that supports both English and Korean, offering essential tools such as card searching, deck exporting, and browsing other players' decks.
 
 ## The Current English Deck Building Experience
 
@@ -19,21 +19,21 @@ Let's take a look at what deck building is like for non-Korean speakers/readers.
 
 ### Building
 
-Cookie Run: Braverse has no official English release. This means the western community must rely on fan translations in order to put together their decks. Currently, the fan translations are accessible via Google Spreadsheets [here](https://docs.google.com/spreadsheets/d/19qYFLkXiL6866nVtp1UQqJtooitc0sfbX14rZGdrwpE/edit?usp=sharing). Deck builders can create their own Google Spreadsheet and copy the cards they want, but this is cumbersome.
+As mentioned earlier, Cookie Run: Braverse has no official English release. This means the western community must rely on fan translations in order to put together their decks. Currently, the fan translations are accessible via Google Spreadsheets [here](https://docs.google.com/spreadsheets/d/19qYFLkXiL6866nVtp1UQqJtooitc0sfbX14rZGdrwpE/edit?usp=sharing). Deck builders can create their own Google Spreadsheet and copy the cards they want, but this is tedious.
 
 ### Deck sharing/searching
 
-There is no widely accepted place to share Cookie Run: Braverse decks. This means if you want to post your deck lists publicly, you would have to do so through social media, which will eventually become difficult to search for as new posts make it more obscure. As for those looking for decks to reference, the lack of a consolidated database means those searching for decks will most likely have to directly contact a deck builder and ask them to share their list. The delay between requesting a deck list and receiving it significantly slows down the entire process.
+There is currently no widely accepted platform for sharing Cookie Run: Braverse decks, creating a major inconvenience for anyeone searching for decks. Though it is possible to post them on social media, it is not a viable long-term solution, as new posts quickly bury older content, making it increasingly difficult to locate specific decks. This lack of a dedicated, searchable database forces those seeking deck references to directly contact deck builders, leading to time-consuming delays between requesting and receiving deck lists. Additionally, the deck builder and deck searcher may not speak the same language, further complicating communication. Such inefficiency hampers the overall experience for players and highlights the pressing need for a dedicated space where decks can be easily shared and accessed.
 
 ### Deck viewing
 
 If the deck list is in English, there are no problems. However, what if you wanted to look at a Korean deck list?
 ![sample_deck_list](/images/blog/cookie_run_sample_red_deck.png)
-As a non-Korean speaker, you would have to find the cards by their images. At the time of writing, the western community has 290 fan translated cards. The process of card searching through images will only get worse as new cards are translated.
+As a non-Korean speaker/reader, you would have to find the cards by their images, which would involve trudging through the spreadsheets and checking every single image link. At the time of writing, the western community has 290 fan translated cards. The process of card searching through images will only get worse as new cards are translated.
 
 Clearly, there are many hurdles non-Korean speaking/reading fans have to jump through just to build their own deck.
 My website aims to address the aforementioned pain points by consolidating the tools deck builders use in order to
-streamline the deck building experience, while providing support for both English and Korean.
+streamline the deck building experience, while providing support for both English and Korean players.
 
 ### Building Bridges and Decks: The Buildspace Advantage
 

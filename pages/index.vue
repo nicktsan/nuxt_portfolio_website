@@ -36,22 +36,18 @@ const technologies = [
 <template>
   <div class="text-gray-700">
     <section>
-        <h1 class="text-5xl font-bold mt-20">Hello, I'm Nicholas Tsang!</h1>
-        <p class="text-base text-gray-900 p-2 italic">Software Developer</p>
+        <h1 class="text-5xl font-bold mt-20">Hi, I'm Nicholas Tsang, but you can call me Nick!</h1>
+        <p class="text-base text-gray-900 p-2 italic">Full Stack Developer</p>
     </section>
     <section class="flex flex-col md:flex-row">
       <div class="md:w-3/4">
           <h2 class="text-3xl font-bold mt-8">My Story</h2>
-          <p class="text-lg py-2">
-              I was a former Software Developer in Quality Assurance who is aspiring to become a Full Stack Developer. My transition to software 
-              development stems from a deep-seated passion 
-              for crafting innovative solutions that enrich user experiences. I possess the ability to adapt swiftly to any role 
-              or project. I am eager to leverage my skills and drive in software development to embark on a new and fulfilling 
-              career journey. I'm currently interested in learning how to use ExpressoTS for my backend. Currently looking for software developer, software engineer, full stack developer, and back end 
-              developer roles that use C#, Python, Java, Go, React, or Typescript.
+          <p class="text-lg py-2 text-justify">
+            I am a Full Stack Developer with a passion for creating innovative solutions that enhance user experiences. My enthusiasm for software development is driven by a commitment to crafting impactful and enjoyable projects. I excel at quickly adapting to various roles and projects, and I am eager to leverage my skills and dedication to pursue a new and fulfilling career journey. 
+            Currently, I am focused on learning how to use ExpressoTS for backend development. I am seeking opportunities in software development, software engineering, full stack development, and backend development roles, particularly those utilizing C#, Python, Java, Go, React, or TypeScript.
           </p>
       </div>
-      <img src="~/assets/images/grad pic crop.png" class="w-1/2 md:max-w-sm p-8 mx-auto" />
+      <img src="~/assets/images/business_suit_headshot_cropped.jpg" class="w-1/2 md:max-w-sm p-8 mx-auto" />
     </section>
     <section>
       <h2 class="text-3xl font-bold mt-8">Programming Languages</h2>
