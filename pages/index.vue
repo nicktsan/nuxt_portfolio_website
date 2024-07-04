@@ -42,7 +42,7 @@ const technologies = [
     <section class="flex flex-col md:flex-row">
       <div class="md:w-3/4">
           <h2 class="text-3xl font-bold mt-8">My Story</h2>
-          <p class="text-lg py-2">
+          <p class="text-lg py-2 text-justify">
             I am a Full Stack Developer with a passion for creating innovative solutions that enhance user experiences. My enthusiasm for software development is driven by a commitment to crafting impactful and enjoyable projects. I excel at quickly adapting to various roles and projects, and I am eager to leverage my skills and dedication to pursue a new and fulfilling career journey. 
             Currently, I am focused on learning how to use ExpressoTS for backend development. I am seeking opportunities in software development, software engineering, full stack development, and backend development roles, particularly those utilizing C#, Python, Java, Go, React, or TypeScript.
           </p>
