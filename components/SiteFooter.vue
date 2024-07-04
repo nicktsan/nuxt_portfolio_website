@@ -1,7 +1,8 @@
 <script setup>
 const links = [
   { name: 'GitHub', href: 'https://github.com/nicktsan', icon: 'entypo-social:github-with-circle' },
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/nicholas-manhay-tsang/', icon: 'entypo-social:linkedin-with-circle' }
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/nicholas-manhay-tsang/', icon: 'entypo-social:linkedin-with-circle' },
+  { name: 'Twitter', href: 'https://x.com/nicktsan9', icon: 'entypo-social:twitter-with-circle' }
 ]
 </script>
 

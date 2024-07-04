@@ -46,6 +46,10 @@ const technologies = [
             I am a Full Stack Developer with a passion for creating innovative solutions that enhance user experiences. My enthusiasm for software development is driven by a commitment to crafting impactful and enjoyable projects. I excel at quickly adapting to various roles and projects, and I am eager to leverage my skills and dedication to pursue a new and fulfilling career journey. 
             Currently, I am focused on learning how to use ExpressoTS for backend development. I am seeking opportunities in software development, software engineering, full stack development, and backend development roles, particularly those utilizing C#, Python, Java, Go, React, or TypeScript.
           </p>
+          <div class="prose">
+            <a href="https://docs.google.com/document/d/1CtHo_nEiRphjD83tX88M6VEFGr0BO99B/edit?usp=sharing&ouid=102572903228363503804&rtpof=true&sd=true">CV</a>
+          </div>
+
       </div>
       <img src="~/assets/images/business_suit_headshot_cropped.jpg" class="w-1/2 md:max-w-sm p-8 mx-auto" />
     </section>
