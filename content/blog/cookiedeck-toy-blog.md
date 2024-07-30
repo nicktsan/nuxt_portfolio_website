@@ -7,7 +7,7 @@ cover: cookiedeck_toy_version_cropped.png
 #   - blog
 ---
 
-I've completed the "toy" version of my deckbuilding website: "CookieDeck", which is currently a barebones website with little to no styling, but has the core functionality needed to create and edit deck lists for Cookie Run: Braverse.
+I'm thrilled to announce that I've completed the "toy" version of CookieDeck, a deck-building website for Cookie Run: Braverse enthusiasts! This initial version looks simple and bare bones, but it contains all the essential functionality required to create and edit deck lists. While there's still a lot of polishing and styling work to do, this milestone marks a significant step towards a fully functional and user-friendly platform. Let’s dive into what’s been built so far and what you can expect as we move forward!
 
 Here is the landing page. It has a search bar that allows users to search for publicly visible decks.
 ![cookiedeck_landing_page](/images/blog/cookiedeck-toy-blog/landing_page.PNG)
@@ -44,8 +44,8 @@ Alternatively, they can search for decks in the "Deck Search" page.
 Either way, the user will be redirected to the deck search page, where the results of their search will be listed.
 ![cookiedeck_landing_page](/images/blog/cookiedeck-toy-blog/deck_search.PNG)
 
-The deck search page only allows users to search by deck title for now, but I plan on implemented advanced search options, such as search by creator, search by card in deck, and various sorting options.
+The deck search page only allows users to search by deck title for now, but I plan on implementing advanced search options, such as search by creator, search by card in deck, and various sorting options.
 
-You may have noticed two features I did not cover: folders and bookmarks. In the future, I plan on implementing a deck folder feature so users have the option of organizing their decks into folders. As for bookmarks, I will allow users to "bookmark" any deck they are allowed to view for easier access so that they don't have to manually search for and find the same deck repeatedly.
+You may have noticed two features I did not cover: folders and bookmarks. In the future, I plan on implementing a deck folder feature so users have the option of organizing their decks into folders. As for bookmarks, I will allow users to "bookmark" any deck they are allowed to view for easier access so they don't have to manually search for and find the same deck repeatedly.
 
-Now that I've finished the basic functionality and logic of the website, all that's left to do before releasing the beta version is to finish the hard part of web development: styling the website. Until then, see you later!
+Now that the core functionality and logic of the website are in place, the final step before releasing the beta version for public testing is to tackle the styling and design. This is where the hard work of web development truly begins, transforming a functional site into an appealing and intuitive user experience. Stay tuned for more updates as I move closer to the beta launch. Until then, see you later!
