@@ -1,6 +1,6 @@
 ---
 title: 'Completing the "toy" version of CookieDeck'
-description: 'Completed the "toy" version of CookieDeck'
+description: "Explore the core features and get a sneak peek at what’s coming next!"
 date: 2024-07-29
 cover: cookiedeck_toy_version_cropped.png
 # tags:
