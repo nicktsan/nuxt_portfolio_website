@@ -1,7 +1,11 @@
 <script setup>
-const { data: posts } = await useAsyncData('posts', () =>
-  queryContent('/blog').find()
-)
+// const { data: posts } = await useAsyncData('posts', () =>
+//   queryContent('/blog').find()
+// )
+const { data: posts } = await useAsyncData('posts', async () => {
+  const fetchedPosts = await queryContent('/blog').find()
+  return fetchedPosts.sort((a, b) => new Date(b.date) - new Date(a.date))
+})
 </script>
 
 <template>
