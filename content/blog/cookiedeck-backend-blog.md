@@ -1,5 +1,5 @@
 ---
-title: "Building the Back End of a Deck-Building Site: A Brief Look into ExpressoTS"
+title: "Building a Deck-Building Site with ExpressoTS"
 description: "Explore the inner workings of my deck-building site with a quick peak into the back end powered by ExpressoTS."
 date: 2024-07-31
 cover: cookie_at_computer.png
@@ -7,7 +7,7 @@ cover: cookie_at_computer.png
 #   - blog
 ---
 
-If you've ever wondered what makes a deck-building site tick, you're in the right place. Today, we're taking a peak at the back end code, powered by the ExpressoTS framework, which has a few tricks up its sleeve to streamline the developer experience. This blog will showcase how I handle deck creation, request validation, and user authentication.
+If you've ever wondered what makes a deck-building site tick, you're in the right place. Today, we're taking a peak at the back end code, powered by the [ExpressoTS](https://expresso-ts.com/) framework, which has a few tricks up its sleeve to streamline the developer experience. This blog will showcase how I handle deck creation, request validation, and user authentication.
 
 Let's start off with the Deck Creation controller.
 
@@ -161,7 +161,7 @@ export async function AuthSupabaseMiddleware(
 }
 ```
 
-First, the code looks for a Bearer token that contains the access token from the client. If there is no access token, the request is denied, and an error is returned to the client. If a Bearer token is found, the code checks if it is valid with "supabase.auth.getUser(token)". Upon successful token validation, the user ID is passed to the request header. Otherwise, an invalid token error is sent to the client. You may have noticed that the code is able to instantiate an instance of a Supabase provider class with ExpressoTS' built in support for dependency injection:
+First, the code looks for a Bearer token that contains the access token from the client. If there is no access token, the request is denied, and an error is returned to the client. If a Bearer token is found, the code checks if it is valid with "supabase.auth.getUser(token)". Upon successful token validation, the user ID is passed to the request header. Otherwise, an invalid token error is sent to the client. You may have noticed that the code is able to instantiate an instance of a [Supabase](https://supabase.com/) provider class with ExpressoTS' built in support for dependency injection:
 
 ```ts
 const supabaseProvider: SupabaseProvider = container.get(SupabaseProvider);
