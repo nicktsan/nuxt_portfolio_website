@@ -1,7 +1,7 @@
 ---
 title: "Handling custom error responses from ExpressoTS with TanStack Query, and NextJS"
 description: "Learn how to handle custom error responses in web applications using ExpressoTS, TanStack Query, and Next.js. This guide walks you through building error management that improves user experience."
-date: 2024-09-04
+date: 2024-09-05
 cover: error-handling-title.jpg
 # tags:
 #   - blog
