@@ -1,7 +1,7 @@
 ---
 title: "Handling custom error responses from ExpressoTS with TanStack Query, and NextJS"
 description: "Learn how to handle custom error responses in web applications using ExpressoTS, TanStack Query, and Next.js. This guide walks you through building error management that improves user experience."
-date: 2024-09-04
+date: 2024-09-05
 cover: error-handling-title.jpg
 # tags:
 #   - blog
@@ -50,35 +50,32 @@ export class DeckUpdateIncrementviewUsecase {
     const doesDeckExist: ISimpleDeckFindResponseDto | null =
       await this.deckRepository.simpleFindById(payload.id);
     if (!doesDeckExist) {
-      const error = this.report.error(
+      throw this.report.error(
         `Deck ${payload.id} not found`,
         StatusCode.NotFound,
-        `Deck ${payload.id} not found`
+        `DeckUpdateIncrementviewUsecase`
       );
-      throw error;
     }
     if (
       doesDeckExist.creator_id !== userId &&
       doesDeckExist.visibility.toLowerCase() === "private"
     ) {
-      const error = this.report.error(
+      throw this.report.error(
         `User is not authorized to access deck ${payload.id}`,
         StatusCode.BadRequest,
-        `User is not authorized to access deck ${payload.id}`
+        `DeckUpdateIncrementviewUsecase`
       );
-      throw error;
     }
 
     const res: DeckEntity | null = await this.deckRepository.incrementDeckView(
       payload.id
     );
     if (!res) {
-      const error = this.report.error(
+      throw this.report.error(
         "Deck views failed to increment",
         StatusCode.BadRequest,
-        "Deck views failed to increment"
+        `DeckUpdateIncrementviewUsecase`
       );
-      throw error;
     }
     return {
       id: res.id,
@@ -92,7 +89,7 @@ The code can be split into two parts. In the first part, the code checks if a de
 
 You may have noticed the code imports "Report". This is ExpressoTS' standardized error reporting class to ensure formatting consistency in error messages that are returned to clients. In order to use it, it must be passed into the constructor of the usecase.
 
-The error responses generated from the aforementioned usecase are as follows.
+The error responses and logs generated from the aforementioned usecase are as follows.
 
 ```ts
 {
@@ -106,6 +103,11 @@ The error responses generated from the aforementioned usecase are as follows.
     "statusCode": 404,
     "error": "Deck 69e2badc-a350-4107-88ef-4979716ce2ed not found"
 }
+```
+
+```
+[ExpressoTS] 2024-09-05 11:25:50 a.m. [PID:5812] ERROR [DeckUpdateIncrementviewUsecase] Deck 69e2badc-a350-4107-88ef-4979716ce2ed not found
+[ExpressoTS] 2024-09-05 11:25:56 a.m. [PID:5812] ERROR [DeckUpdateIncrementviewUsecase] User is not authorized to access deck 69e2badc-a350-4107-88ef-4979716ce2ec
 ```
 
 ExpressoTS has a middleware function called "ValidateDTO" for checking and validating the request from the client. This is what the generated error response looks like when validation fails:
