@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     },
     highlight: {
       theme: 'nord',
-      preload: ['ts', 'js', 'css', 'json', 'bash', 'vue']
+      preload: ['ts', 'tsx', 'js', 'css', 'json', 'bash', 'vue']
     }
   },
   apollo: {
