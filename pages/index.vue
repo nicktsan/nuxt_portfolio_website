@@ -47,7 +47,7 @@ const technologies = [
             Currently, I am focused on learning how to use ExpressoTS for backend development. I am seeking opportunities in software development, software engineering, full stack development, and backend development roles, particularly those utilizing C#, Python, Java, Go, React, or TypeScript.
           </p>
           <div class="prose">
-            <a href="https://docs.google.com/document/d/1CtHo_nEiRphjD83tX88M6VEFGr0BO99B/edit?usp=sharing&ouid=102572903228363503804&rtpof=true&sd=true">CV</a>
+            <a href="https://docs.google.com/document/d/13_x7xrj9Gv2p8nJFPd0DcOk_p5WXg9A2/edit?usp=sharing&ouid=102572903228363503804&rtpof=true&sd=true">CV</a>
           </div>
 
       </div>
