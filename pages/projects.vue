@@ -44,6 +44,16 @@ const projects = ref([
     link: "https://www.roshi.ai/",
     employer: "Roshi Technologies Inc.",
     linkText: "View Website"
+  },
+  {
+    id: 2,
+    title: "Club Freedom Testimonials",
+    description: "A testimonial collection website that transcribes testimonials and summarizes them with AI for Club Freedom, a non-profit organization dedicated to helping the less fortunate in downtown Vancouver.",
+    // image: "/placeholder.svg?height=400&width=600",
+    // technologies: ["Vue.js", "Node.js", "MongoDB"],
+    link: "https://for-club-freedom.vercel.app/",
+    employer: "Club Freedom",
+    linkText: "View Website"
   }
 ]);
 </script>
