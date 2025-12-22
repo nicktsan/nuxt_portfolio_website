@@ -51,7 +51,7 @@ const projects = ref([
     description: "A testimonial collection website that transcribes testimonials and summarizes them with AI for Club Freedom, a non-profit organization dedicated to helping the less fortunate in downtown Vancouver.",
     // image: "/placeholder.svg?height=400&width=600",
     // technologies: ["Vue.js", "Node.js", "MongoDB"],
-    link: "https://for-club-freedom.vercel.app/",
+    link: "https://cf.vhng.dev/",
     employer: "Club Freedom",
     linkText: "View Website"
   }
